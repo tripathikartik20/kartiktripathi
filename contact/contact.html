@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Kartik Tripathi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #fff;
+        }
+        form {
+            background: #333;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            color: #fff;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            background-color: #555;
+            color: #fff;
+            border: 1px solid #999;
+            border-radius: 4px;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #ff0000;
+        }
+        .form-group button {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border: 2px solid #ff0000;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .form-group button:hover {
+            background-color: #ff0000;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/portfolio/index.html" class="logo">Kartik</a>
+
+        <nav>
+            <a href="/portfolio/index.html" class="active"> Home</a>
+            <a href="/portfolio/services/services.html" >Services</a>
+            <a href="/portfolio/skills/skills.html" >Skills</a>
+            <a href="/portfolio/education/education.html" >Education</a>
+            <a href="/portfolio/expericance/experiance.html" >Experience</a>
+            <a href="contact.html" >Contact</a>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <h1><br><br><br><br><br>Contact me</h1>
+        <form action="/submit-contact" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Send Message</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
